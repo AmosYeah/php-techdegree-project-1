@@ -2,16 +2,20 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <!-- Extra Credit-3: Auto-refresh the quote. -->
+  <!-- code adapted from https://www.w3schools.com/tags/att_meta_http_equiv.asp -->
+  <meta http-equiv="refresh" content="30">
   <title>Random Quotes</title>
   <link href='https://fonts.googleapis.com/css?family=Playfair+Display:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/styles.css">
+  <?php include "inc/functions.php" ?>
 </head>
-<body>
+<!-- Extra Credit-2: Random background color. -->
+<body style="background-color: <?php echo genRandomColor(); ?>">
   <div class="container">
     <div id="quote-box">
-      <p class="quote">Every great developer you know got there by solving problems they were unqualified to solve until they actually did it.</p>
-      <p class="source">Patrick McKenzie<span class="citation">Twitter</span><span class="year">2016</span></p>
+      <?php echo printQuote($quoteArray); ?>
     </div>
     <button id="loadQuote" onclick="window.location.reload(true)" >Show another quote</button>
   </div>

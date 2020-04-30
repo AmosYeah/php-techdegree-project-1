@@ -15,7 +15,7 @@
 <body style="background-color: <?php echo genRandomColor(); ?>">
   <div class="container">
     <div id="quote-box">
-      <?php echo printQuote($quoteArray); ?>
+      <?php echo printQuote($quotes); ?>
     </div>
     <button id="loadQuote" onclick="window.location.reload(true)" >Show another quote</button>
   </div>

@@ -1,10 +1,17 @@
 <?php
+
+/** 
+  * A summary of this PHP techdegree project on Treehouse.
+  *
+  * @author: Amos Tang
+  */
+
 // PHP - Random Quote Generator
 
 // Create the Multidimensional array of quote elements and name it quotes
 // Each inner array element should be an associative array
 // quotes copied from https://blog.hubspot.com/sales/famous-quotes
-$quoteArray = [
+$quotes = [
     ["quote" => "The greatest glory in living lies not in never falling, but in rising every time we fall.",
     "source" => "Nelson Mandela",
     "citation" => "speech",
